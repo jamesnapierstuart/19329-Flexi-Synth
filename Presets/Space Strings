@@ -1,0 +1,111 @@
+var o, p;
+o = [
+	Event.prNew,  Array.prNew(256),  Array.prNew(4),  "OFF",  
+	"SINE",  "SAW",  "SQUARE",  Array.prNew(3),  
+	"HPF",  "OFF",  "LPF",  Array.prNew(4),  
+	"SAW",  "SQUARE",  "OFF",  "SINE",  
+	Array.prNew(3),  "OFF",  "LFO1 RATE",  "LFO2 RATE",  
+	Array.prNew(3),  "OFF",  "LFO1 RATE",  "LFO2 RATE",  
+	Array.prNew(4),  "OFF",  "OSC1 PITCH",  "OSC2 PITCH",  
+	"CUTOFF",  Array.prNew(3),  "OFF",  "LFO1 RATE",  
+	"LFO2 RATE",  Array.prNew(4),  "OFF",  "OSC1 PITCH",  
+	"OSC2 PITCH",  "CUTOFF",  Array.prNew(4),  "OFF",  
+	"SINE",  "SAW",  "SQUARE",  Array.prNew(4),  
+	"SAW",  "SQUARE",  "OFF",  "SINE",  
+	Array.prNew(4),  "OFF",  "OSC1 PITCH",  "OSC2 PITCH",  
+	"CUTOFF"
+];
+p = [
+	// Event
+	0, [ array: o[1],  size: 48,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1, [ 'osc1ch',  2,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'gate',  0,  'matrixdest1menu',  0,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'rq',  1.000000,  
+		'envslidersattack',  0.437500,  'matrixknobs3',  0,  
+		'lfo2menu',  0,  'lfo1types',  o[2],  
+		'matrixsrc1menu',  0,  nil,  nil,  
+		nil,  nil,  'matrixsrc3menu',  0,  
+		'modfreq',  0,  nil,  nil,  
+		'filttypeitems',  o[7],  'matrixknobs1',  0,  
+		nil,  nil,  'osc1menu',  2,  
+		nil,  nil,  nil,  nil,  
+		'envsliderssustain',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'osc2wavetpeitems',  o[11],  'lfo1rate',  0,  
+		'cutofffreq',  0.020000,  'matrixsrc2menu',  0,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'filt',  2,  
+		'matrixknobs2',  0,  nil,  nil,  
+		'osc2ch',  2,  'matrixsrc3types',  o[16],  
+		nil,  nil,  'modfreq2',  0,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'verbsize',  0.810000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'matrixsrc2types',  o[20],  
+		'osc1freq',  0.870000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'lfo2rate',  0,  'lfoselect2',  0,  
+		'matrixdest2types',  o[24],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'matrixsrc1types',  o[29],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'envslidersdecay',  0.500000,  'matrixdest1types',  o[33],  
+		nil,  nil,  nil,  nil,  
+		'filtmenu',  2,  nil,  nil,  
+		'osc2freq',  0.820000,  'lfo1menu',  0,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'matrixdest3menu',  0,  'envslidersrelease',  0.179688,  
+		'lfo2types',  o[38],  'matrixdest2menu',  0,  
+		'outlevel',  0.410000,  'osc1wavetpeitems',  o[43],  
+		nil,  nil,  'lfoselect',  0,  
+		'lfofiltselect',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'modcutofffreq',  0,  'osc2menu',  2,  
+		nil,  nil,  nil,  nil,  
+		'verbmix',  0.670000,  nil,  nil,  
+		nil,  nil,  'matrixdest3types',  o[48] ],  
+	// Array
+	2, [ o[3],  o[4],  o[5],  o[6] ],  
+	// Array
+	7, [ o[8],  o[9],  o[10] ],  
+	// Array
+	11, [ o[12],  o[13],  o[14],  o[15] ],  
+	// Array
+	16, [ o[17],  o[18],  o[19] ],  
+	// Array
+	20, [ o[21],  o[22],  o[23] ],  
+	// Array
+	24, [ o[25],  o[26],  o[27],  o[28] ],  
+	// Array
+	29, [ o[30],  o[31],  o[32] ],  
+	// Array
+	33, [ o[34],  o[35],  o[36],  o[37] ],  
+	// Array
+	38, [ o[39],  o[40],  o[41],  o[42] ],  
+	// Array
+	43, [ o[44],  o[45],  o[46],  o[47] ],  
+	// Array
+	48, [ o[49],  o[50],  o[51],  o[52] ]
+];
+prUnarchive(o,p);
